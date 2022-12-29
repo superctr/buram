@@ -31,18 +31,20 @@ If no filename is given with `-f` or `-o` options, the default is `test.brm`
 ### Examples
 Create a new archive `myarchive.brm` containing a savefile called `SONICCD`:
 
-	$ buram -cf myarchive.brm SONICCD.bin`
+	$ buram -cf myarchive.brm SONICCD.bin
 
 Check the number of free blocks in `myarchive.brm`:
 
 	$ buram -if myarchive.brm
+
+	files: 1, free blocks: 114
 
 List all files in `myarchive.brm`:
 
 	$ buram -tf myarchive.brm
 	      1    11 SONICCD
 
-The last two operations could be combined like this, additionally adding the `-v` flag to see information:
+The last two operations could be combined like this, additionally adding the `-v` flag to see more information:
 
 	$ buram -tvfi myarchive.brm
 		  1    11 SONICCD
